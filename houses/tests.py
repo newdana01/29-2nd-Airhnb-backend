@@ -29,6 +29,7 @@ class HouseListTest(TestCase):
     def tearDown(self):
         Country.objects.all().delete()
         City.objects.all().delete()
+        HouseType.objects.all().delete()
         House.objects.all().delete()
 
     def test_get_all_house_list_success(self):
